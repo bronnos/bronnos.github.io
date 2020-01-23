@@ -4,9 +4,9 @@
         <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
     </head>
 <script src="https://aframe.io/releases/1.0.3/aframe.min.js"></script>
-src="https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js">
-<!-- <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/build/aframe-ar.js"></script> -->
-<script src="https://bronnos.github.io/ar_bronnos/aframe-ar.js"></script>
+<script src="https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.0/dist/aframe-extras.min.js"></script>
+<script src="https://bronnos.github.io/ar_bronnos/aframe-ar.js"><script>
 <script>
     // Workaround for an AR.js bug (https://github.com/jeromeetienne/AR.js/issues/410)
     const sceneEl = document.querySelector('a-scene');
@@ -14,9 +14,8 @@ src="https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loade
         sceneEl.camera = new THREE.PerspectiveCamera();
     });
 </script>
-  <body style='margin : 0px; overflow: hidden;'>
-    
-    
+
+  <body style='margin : 0px; overflow: hidden;'>    
     <a-scene precision: mediump embedded arjs=’sourceType: webcam;’>
     
         <a-assets>
